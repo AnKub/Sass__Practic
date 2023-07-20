@@ -1,0 +1,6 @@
+@use './var.scss';
+
+@mixin linkAction {
+  color: var.color('primary');
+
+}
