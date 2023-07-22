@@ -112,6 +112,7 @@ justify-content: center;
 @media all and (width < s.screen('tablet')) {
   background-size: 150%;
   max-height: 500px;
+  
 }  
 }
 
@@ -171,3 +172,37 @@ $productImage:(
   max-width: 500px;
   } 
   }
+
+  /* footer make chenge */
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(6,15%);   
+    background: s.color('whiteLight');
+    padding: 20px s.space(30) ;
+    gap: s.space(8);
+
+    @media all and (width < s.screen('tablet')) {
+      grid-template-columns: repeat(3,40%); 
+    }  
+  
+  }
+ 
+  .footer__title{    
+    color: s.color('fontDark');   
+    font-size: s.size('small');
+    padding-bottom:  s.space(2);
+    font-weight: 600;
+  }
+  .footer__col{
+  flex-direction: column;
+  font-size: 12px;
+  padding: s.space(2);
+  
+  }
+
+  .footer__link {
+    color: s.color('backgroundDark'); 
+    @include s.click;
+  }
+
+

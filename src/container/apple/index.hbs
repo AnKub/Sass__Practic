@@ -215,7 +215,21 @@
     </div>
   </div>
 
+  {{!-- footer look down --}}
 
+
+  <footer class="footer">
+    {{#each footer}}
+    <div class="footer__content">
+      <p class="footer__title">{{title}}</p>
+      {{#each links}}
+      <div class="footer__col">
+        <a href="{{url}}" class="footer__link">{{text}}</a>
+      </div>
+      {{/each}}
+    </div>
+    {{/each}}
+  </footer>
 
 
 </div>
