@@ -269,39 +269,39 @@
 /* footer make chenge */
 .footer {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  background: #454545;
-  padding: 60px;
+  grid-template-columns: repeat(6, 15%);
+  background: #dadada;
+  padding: 20px 120px;
   gap: 32px;
+}
+@media all and (width < 1000px) {
+  .footer {
+    grid-template-columns: repeat(3, 40%);
+  }
 }
 
 .footer__title {
-  text-decoration: none;
-  color: #dadada;
-  transition: opacity 0.7s;
-  cursor: pointer;
+  color: #10101f;
   font-size: 12px;
-}
-.footer__title:hover {
-  opacity: 0.7;
-}
-.footer__title:active {
-  opacity: 0.3;
+  padding-bottom: 8px;
+  font-weight: 600;
 }
 
 .footer__col {
   flex-direction: column;
   font-size: 12px;
-  color: #dadada;
   padding: 8px;
-  text-decoration: none;
+}
+
+.footer__link {
+  color: #454545;
   transition: opacity 0.7s;
   cursor: pointer;
 }
-.footer__col:hover {
+.footer__link:hover {
   opacity: 0.7;
 }
-.footer__col:active {
+.footer__link:active {
   opacity: 0.3;
 }
 
